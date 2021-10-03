@@ -7,4 +7,4 @@ if unit.upper() == "C":
     print(f"The new temperature is {converted}Fahrenheit")
 else:
     converted = (temperature - 32) * 5/9
-    print(f"The new temperature is {converted} Fahrenheit")
+    print(f"The new temperature is {converted} Celsiun")
