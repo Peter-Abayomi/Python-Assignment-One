@@ -1,11 +1,13 @@
-def check_numbers(numbers):
-    for item in numbers:
-        if item % 2 == 0:
+def check_numbers(number):
+    for item in number:
+        if isinstance(item, int) and item % 2 == 0:
             print(item)
-        else:
-            print('There are no even number in this list')
+        elif len(number) == 0:
+            print('The list is empty')
+        elif isinstance(item, str):
+            print('There are no numbers in the list')
 
 
-values = [2, 5, 4, 6, 8, 10, 9, 7, 3, 11, 12, 13, 14, 16, 15, 17, 18, 16]
+number = [2, 5, 4, 6, 8, 10, 9, 7, 3, 11, 12, 13, 14, 16, 15, 17, 18, 16]
 
-check_numbers(values)
+check_numbers(number)
