@@ -1,6 +1,13 @@
-def calculate_days(year_one, month_one, day_one, year_two, month_two, day_two):
-    subtraction = ((year_one - year_two) * 365) + ((month_one - month_two) * 30) + (day_one - day_two)
-    print(f"The difference between {year_one}/{month_one}/{day_one} and {year_two}/{month_two}/{day_two} is {subtraction}days")
+from datetime import date
 
 
-calculate_days(1999, 5, 2, 1998, 5, 6)
+def date_subtraction(year_one, year_two):
+    """Print the number of days between two dates"""
+    days_between = (year_one - year_two)
+    print(f"There are {days_between}days between {year_one} and {year_two}")
+
+
+one = date(2019, 4, 13)
+two = date(2017, 5, 15)
+
+date_subtraction(one, two)
