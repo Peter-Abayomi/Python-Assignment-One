@@ -15,4 +15,4 @@ def check_numbers(number):
 
 list_of_number = [2, 3, 5, 7, 8, 4, 6, 12, 13, 14, 15, 16, 1, 17, 18, 20, 21]
 
-
+print(check_numbers(list_of_number))
